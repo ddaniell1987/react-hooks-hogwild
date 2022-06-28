@@ -32,7 +32,7 @@ function HogList({hogs}) {
         return(
             <div>
                 <Tile sort={handleSort} greased={greased} handleGreased={handleGreased} />
-                <div className="cards">
+                <div className="ui three stackable cards">
                     {filterGreased.map((hog) => (
                         <Hogs key={hog.name} hog={hog} name={hog.name} specialty={hog.specialty} image={hog.image} greased={hog.greased} weight={hog.weight} highest={hog["highest medal achieved"]} />
                     ))}
